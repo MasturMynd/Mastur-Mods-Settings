@@ -1,0 +1,21 @@
+Eventually this will be a fully functioning 'User Interface Toolbox'.
+
+What exactly does that mean?
+
+  You will be able to choose from a set list of multiple UI changes including:
+
+    Status Bar:
+      Battery
+      Data Movement (in and out arrows)
+      Signal
+      Wifi
+      Clock (still haven't decided if I want to include this)
+
+    Navigation Bar:
+      Back Key
+      Home Key
+      Running Apps Key
+      Search Key
+      Legacy Menu Key
+
+  More may come eventually but this is the base of what this application is going to be for
