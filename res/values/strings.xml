@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mastur Mods Settings</string>
+    <string name='status_bar'>Status Bar</string>
+    <string name='navigation_bar'>Navigation Bar</string>
+    <string name="support">Support</string>
+
+</resources>
