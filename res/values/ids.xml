@@ -16,6 +16,8 @@
     <item type="id" name="wifi_chooser">false</item>
     
     <item type="id" name="email">false</item>
+    <item type="id" name="button_email">false</item>
     <item type="id" name="donate">false</item>
+    <item type="id" name="button_donate">false</item>
     
 </resources>
