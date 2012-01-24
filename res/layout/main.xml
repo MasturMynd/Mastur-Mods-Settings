@@ -1,53 +1,267 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" 
-    android:gravity="center_horizontal">
-
-    <TabHost
-        android:id="@android:id/tabhost"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <LinearLayout
-            android:id="@+id/linearLayout1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-
-
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-            </TabWidget>
-
-            <FrameLayout
-                android:id="@android:id/tabcontent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <LinearLayout
-                    android:id="@+id/status_bar"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-                    </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/nav_bar"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-                </LinearLayout>
-
-                <LinearLayout 
-                    android:id="@+id/Support"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-                </LinearLayout>
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
                 
-            </FrameLayout>
-        </LinearLayout>
-    </TabHost>
+    <LinearLayout
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+                    
+        <TextView
+            android:id="@+id/stat_bar_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="8dip"
+            android:paddingLeft="0dip"
+            android:gravity="bottom"
+            android:text="@string/stat_bar_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/battery"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip" >
 
+        <TextView
+            android:gravity="left"
+            android:layout_margin="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/battery"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#aaffffff" />
+
+        <ExpandableListView
+            android:id="@+id/bttery_chooser"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight="1" >
+        </ExpandableListView>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/data_icon"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip" >
+
+        <TextView
+            android:gravity="left"
+            android:layout_margin="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data_icon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#aaffffff" />
+
+        <ExpandableListView
+            android:id="@+id/data_chooser"
+            android:layout_width="0dip"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </ExpandableListView>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/signal_icon"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip" >
+
+        <TextView
+            android:gravity="left"
+            android:layout_margin="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signal_icon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#aaffffff" />
+
+        <ExpandableListView
+            android:id="@+id/signal_chooser"
+            android:layout_width="0dip"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </ExpandableListView>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/wifi_icon"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip" >
+
+        <TextView
+            android:gravity="left"
+            android:layout_margin="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_icon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#aaffffff" />
+
+        <ExpandableListView
+            android:id="@+id/wifi_chooser"
+            android:layout_width="0dip"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </ExpandableListView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="8dip"
+            android:gravity="bottom"
+            android:paddingLeft="0dip"
+            android:text="@string/nav_bar_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/back_button"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip" >
+
+        <TextView
+            android:gravity="left"
+            android:layout_margin="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_button"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#aaffffff" />
+
+        <ExpandableListView
+            android:id="@+id/back_chooser"
+            android:layout_width="0dip"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </ExpandableListView>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/home_button"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:gravity="left"
+            android:text="@string/home_button"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#aaffffff" />
+        
+        <ExpandableListView
+            android:id="@+id/home_chooser"
+            android:layout_width="0dip"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </ExpandableListView>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/recent_button"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip" >
+        
+        <TextView
+            android:gravity="left"
+            android:layout_margin="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recent_button"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#aaffffff" />
+
+        <ExpandableListView
+            android:id="@+id/recent_chooser"
+            android:layout_width="0dip"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </ExpandableListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Support"
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="8dip"
+        android:gravity="bottom"
+        android:paddingLeft="0dip"
+        android:text="@string/support_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffffff" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/email"
+        android:layout_width="160dip"
+        android:layout_height="40dip" 
+        android:layout_gravity="center">
+        
+        <WebView
+            android:gravity="center"
+            android:id="@+id/webView1"
+            android:layout_width="140dip"
+            android:layout_height="35dip"
+            android:clickable="true"
+            android:onClick="masturmynd@gmail.com">
+        	
+        	<TextView
+            	android:gravity="center"
+            	android:layout_margin="8dip"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+            	android:text="@string/email"
+       	    	android:textAppearance="?android:attr/textAppearanceMedium"
+    	        android:textColor="#aa000000" />
+        </WebView>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/donate"
+        android:layout_width="160dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center" >
+        
+        <WebView
+            android:gravity="center"
+            android:id="@+id/webView2"
+            android:layout_width="140dip"
+            android:layout_height="35dip"
+            android:clickable="true"
+            android:onClick="https://t.co/3GuPOxKr">
+       		
+       		<TextView
+            	android:gravity="center"
+            	android:layout_margin="8dip"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+            	android:text="@string/donate"
+            	android:textColor="#aa000000"
+            	android:textAppearance="?android:attr/textAppearanceMedium" />
+         </WebView>
+    </LinearLayout>
 </LinearLayout>
