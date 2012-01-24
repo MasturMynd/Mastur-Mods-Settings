@@ -14,21 +14,30 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int Support=0x7f040006;
-        public static final int linearLayout1=0x7f040003;
-        public static final int nav_bar=0x7f040005;
-        public static final int status_bar=0x7f040004;
-        public static final int tabcontent=0x7f040002;
-        public static final int tabhost=0x7f040001;
-        public static final int tabs=0x7f040000;
+        public static final int Support=0x7f05000a;
+        public static final int empty=0x7f050006;
+        public static final int linearLayout1=0x7f050007;
+        public static final int list=0x7f050005;
+        public static final int nav_bar=0x7f050009;
+        public static final int settings_pager=0x7f050004;
+        public static final int status_bar=0x7f050008;
+        public static final int tabcontent=0x7f050002;
+        public static final int tabhost=0x7f050001;
+        public static final int tabs=0x7f050000;
+        public static final int text=0x7f050003;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int fragment_pager_list=0x7f030000;
+        public static final int main=0x7f030001;
+        public static final int settings_view=0x7f030002;
     }
     public static final class string {
-        public static final int app_name=0x7f050000;
-        public static final int navigation_bar=0x7f050002;
-        public static final int status_bar=0x7f050001;
-        public static final int support=0x7f050003;
+        public static final int app_name=0x7f060000;
+        public static final int navigation_bar=0x7f060002;
+        public static final int status_bar=0x7f060001;
+        public static final int support=0x7f060003;
+    }
+    public static final class xml {
+        public static final int main=0x7f040000;
     }
 }

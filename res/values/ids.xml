@@ -3,4 +3,8 @@
     <item type="id" name="tabs">false</item>
     <item type="id" name="tabhost">false</item>
     <item type="id" name="tabcontent">false</item>
+    <item type="id" name="text">false</item>
+    <item type="id" name="settings_pager">false</item>
+    <item type="id" name="list">false</item>
+    <item type="id" name="empty">false</item>
 </resources>
