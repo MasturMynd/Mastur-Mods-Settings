@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Status Bar Mods -->
+    // Battery/Clock/Data/Signal/Wifi
+    <header android:title="@string/status_bar" />
+    
+    <!-- Navigation Bar Mods -->
+    // Soft Keys
+    <header android:title="@string/nav_bar" />
+    
+    <!-- Support -->
+    // Support user/developer
+    <header android:title="@string/support" />
+
+</preference-headers>
