@@ -1,39 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Mastur Mods Settings</string>
-    <string name="choose">Let\'s Do This!</string>
-    <string name="ready">Ready?</string>
 
+    <!--Begin Status Bar Strings -->
     <string name="status_bar">Status Bar</string>
     <string name="stat_bar_title">Status Bar Tweaks</string>
-    <string name="battery_chooser">Choose Your Battery</string>
     <string name="battery">Battery Icon</string>
-    <string name="battery_circle">Circle</string>
-    <string name="battery_digital">Digital</string>
-    <string name="battery_gauge">Gauge</string>
-    <string name="battery_hooolm">Circle Glow</string>
-    <string name="battery_numbers">Stock Numbered</string>
-    <string name="battery_original">Stock</string>
-    <string name="battery_xoom">Xoom</string>
     <string name="data_icon">Data Icon</string>
     <string name="signal_icon">Signal Icon</string>
     <string name="wifi_icon">Wi-fi Icon</string>
-
+    <!-- End Status Bar Strings -->
+    
+    <!--Begin Navigation Strings -->
     <string name="navigation_bar">Navigation Bar</string>
     <string name="nav_bar_title">Navigation Bar tweaks</string>
     <string name="back_button">Back Soft Key</string>
-    <string name="back_fat">Prime Fat</string>
-    <string name="back_plain">Xoom Plain</string>
-    <string name="back_prime">Prime</string>
-    <string name="back_original">Stock</string>
-    <string name="back_xoom">Xoom</string>
     <string name="home_button">Home Soft Key</string>
-    <string name="menu_button">Menu Soft Key</string>
     <string name="recent_button">Recent Soft Key</string>
-    <string name="search_button">Search Soft Key</string>
+    <!-- End Navigation Strings -->
     
+    <!--Begin Support Strings -->
     <string name="support">Support</string>
     <string name="support_title">Support or Email the Developer</string>
     <string name="email">Email me</string>
     <string name="donate">Donate</string>
+    <!--End Support Strings -->
 </resources>
