@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item type="id" name="settings_pager">false</item>
-    <item type="id" name="color_white">false</item>
+    <item type="id" name="main_scroll">false</item>
+    <item type="id" name="battery_choose">false</item>
+    
     <item type="id" name="status_bar">false</item>
-    <item type="id" name="status_bar_title">false</item>
-    
-    <item type="id" name="back_button">false</item>
-    <item type="id" name="back_chooser">false</item>
-    <item type="id" name="home_chooser">false</item>
-    <item type="id" name="recent_chooser">false</item>
-    
+    <item type="id" name="battery">false</item>
     <item type="id" name="battery_chooser">false</item>
-    <item type="id" name="data_chooser">false</item>
-    <item type="id" name="signal_chooser">false</item>
-    <item type="id" name="wifi_chooser">false</item>
+    <item type="id" name="data">false</item>
+    <item type="id" name="signal">false</item>
+    <item type="id" name="wifi">false</item>
     
-    <item type="id" name="email">false</item>
+    <item type="id" name="nav_bar">false</item>
+    <item type="id" name="back">false</item>
+    <item type="id" name="home">false</item>
+    <item type="id" name="menu">false</item>
+    <item type="id" name="recent">false</item>
+    <item type="id" name="search">false</item>
+    
+    <item type="id" name="support">false</item>
     <item type="id" name="button_email">false</item>
-    <item type="id" name="donate">false</item>
     <item type="id" name="button_donate">false</item>
     
 </resources>
