@@ -3,7 +3,7 @@
 	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" >
 	    <LinearLayout android:layout_width="match_parent" android:layout_height="40dp" android:id="@id/status_bar" >
             <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingLeft="8dip" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#ffffffff" android:text="@string/stat_bar_title" />
-	    </LinearLayout>
+	    </LinearLayout> 
 	    <LinearLayout android:layout_width="fill_parent" android:layout_height="160dip" android:orientation="vertical" >
 			<Button android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="40dip" android:background="@drawable/background" android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#aa33b5e5" android:text="@string/battery" android:drawableLeft="@drawable/battery" android:id="@id/battery" />
 	    	<Button android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="40dip" android:background="@drawable/background" android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#aa33b5e5" android:text="@string/data_icon" android:drawableLeft="@drawable/data" android:id="@id/data" />

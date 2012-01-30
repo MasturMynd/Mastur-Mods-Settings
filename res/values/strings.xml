@@ -1,39 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Begin Activities Titles -->
     <string name="app_name">Mastur Mods Settings</string>
+    <string name="title_stat_bar">Status Bar Mods</string>
+    <string name="title_nav_bar">Navigation Bar Mods</string>
+    <string name="back_mods">Back Button Mods</string>
+    <string name="battery_mods">Battery Icon Mods</string>
+    <string name="data_mods">Data Icon Mods</string>
+    <string name="home_mods">Home Button Mods</string>
+    <string name="menu_mods">Menu Button Mods</string>
+    <string name="recent_mods">Recent Apps Button Mods</string>
+    <string name="search_mods">Search Button Mods</string>
+    <string name="signal_mods">Signal Icon Mods</string>
+    <string name="wifi_mods">Wi-Fi Icon Mods</string>
+    
+    <!-- Begin Preferences -->
+    <string name="nav_bar">Navigation Bar</string>
+    <string name="stat_bar">Status Bar</string>
+    <string name="battery_title">Battery</string>
+    <string name="data_title">Data</string>
+    <string name="signal_title">Signal</string>
+    <string name="wifi_title">Wi-Fi</string>
+    <string name="back_title">Back Soft Key</string>
+    <string name="home_title">Home Soft Key</string>
+    <string name="menu_title">Menu Soft Key</string>
+    <string name="recent_title">Recent Soft Key</string>
+    <string name="search_title">Search Soft Key</string>
+    <!-- End Preferences -->
+    
+    <!-- Begin Button Titles -->
+    <string name="bl">Bottom Left</string>
+    <string name="block">Blocks</string>
+    <string name="br">Bottom Right</string>
+    <string name="circle">Circle</string>
+    <string name="digital">Digital</string>
+    <string name="fat">Prime Fat</string>
+    <string name="gauge">Gauge</string>
+    <string name="hooolm">Circle Glow</string>
+    <string name="numbers">Stock Numbered</string>
+    <string name="original">Stock</string>
+    <string name="plain">Xoom Plain</string>
+    <string name="prime">Prime</string>
+    <string name="round">Round</string>
+    <string name="tl">Top Left</string>
+    <string name="tr">Top Right</string>
+    <string name="xoom">Xoom</string>
     <string name="choose">Let\'s Do This!</string>
     <string name="ready">Ready?</string>
-
+	<!-- End Button Titles -->
+    
+    <!-- Begin Status Bar -->
     <string name="status_bar">Status Bar</string>
     <string name="stat_bar_title">Status Bar Tweaks</string>
     <string name="battery_chooser">Choose Your Battery</string>
     <string name="battery">Battery Icon</string>
-    <string name="battery_circle">Circle</string>
-    <string name="battery_digital">Digital</string>
-    <string name="battery_gauge">Gauge</string>
-    <string name="battery_hooolm">Circle Glow</string>
-    <string name="battery_numbers">Stock Numbered</string>
-    <string name="battery_original">Stock</string>
-    <string name="battery_xoom">Xoom</string>
     <string name="data_icon">Data Icon</string>
     <string name="signal_icon">Signal Icon</string>
     <string name="wifi_icon">Wi-fi Icon</string>
-
+	<!-- End Status Bar -->
+    
+    <!-- Begin Navigation Bar -->
     <string name="navigation_bar">Navigation Bar</string>
     <string name="nav_bar_title">Navigation Bar tweaks</string>
     <string name="back_button">Back Soft Key</string>
-    <string name="back_fat">Prime Fat</string>
-    <string name="back_plain">Xoom Plain</string>
-    <string name="back_prime">Prime</string>
-    <string name="back_original">Stock</string>
-    <string name="back_xoom">Xoom</string>
     <string name="home_button">Home Soft Key</string>
     <string name="menu_button">Menu Soft Key</string>
     <string name="recent_button">Recent Soft Key</string>
     <string name="search_button">Search Soft Key</string>
+    <!-- End Navigation Bar -->
     
+    <!-- Begin Support -->
     <string name="support">Support</string>
     <string name="support_title">Support or Email the Developer</string>
     <string name="email">Email me</string>
     <string name="donate">Donate</string>
+    <!-- End Support -->
 </resources>

@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item type="id" name="main_scroll">false</item>
+    <item type="id" name="back_choose">false</item>
     <item type="id" name="battery_choose">false</item>
+    <item type="id" name="data_choose">false</item>
+    <item type="id" name="home_choose">false</item>
+    <item type="id" name="menu_choose">false</item>
+    <item type="id" name="recent_choose">false</item>
+    <item type="id" name="search_choose">false</item>
+    <item type="id" name="signal_choose">false</item>
+    <item type="id" name="wifi_choose">false</item>
+    
+    <item type="id" name="radiogroup_back">false</item>
+    <item type="id" name="radiogroup_battery">false</item>
+    <item type="id" name="radiogroup_data">false</item>
+    <item type="id" name="radiogroup_home">false</item>
+    <item type="id" name="radiogroup_menu">false</item>
+    <item type="id" name="radiogroup_recent">false</item>
+    <item type="id" name="radiogroup_search">false</item>
+    <item type="id" name="radiogroup_signal">false</item>
+    <item type="id" name="radiogroup_wifi">false</item>
     
     <item type="id" name="status_bar">false</item>
     <item type="id" name="battery">false</item>

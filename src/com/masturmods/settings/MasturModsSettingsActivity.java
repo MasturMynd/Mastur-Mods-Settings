@@ -11,6 +11,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 import com.masturmods.settings.R;
+import com.masturmods.settings.activities.*;
 
 public class MasturModsSettingsActivity extends Activity {
 	String url = "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=7NN6B7L7YXQ82&lc=US&item_name=Mastur%20Mods&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted";
@@ -56,64 +57,89 @@ public class MasturModsSettingsActivity extends Activity {
    				startActivity(emailIntent);
    			}
    		});
+   		final Intent batteryIntent = new Intent(this, BatteryChooser.class);
    		battery = (Button)findViewById(R.id.battery);
    		battery.setOnClickListener(new OnClickListener() {
+   			@Override
    			public void onClick(View v) {
-   			setContentView(R.layout.battery_chooser);
+   				startActivity(batteryIntent);
    			}
    		});
+   		final Intent dataIntent = new Intent(this, DataChooser.class);
    		data = (Button)findViewById(R.id.data);
    		data.setOnClickListener(new OnClickListener() {
+   			@Override
    			public void onClick(View v) {
-   			setContentView(R.layout.data_chooser);
+   				startActivity(dataIntent);
    			}
    		});
+   		final Intent signalIntent = new Intent(this, SignalChooser.class);
    		signal = (Button)findViewById(R.id.signal);
    		signal.setOnClickListener(new OnClickListener() {
+   			@Override
    			public void onClick(View v) {
-   			setContentView(R.layout.signal_chooser);
+   				startActivity(signalIntent);
    			}
    		});
+   		final Intent wifiIntent = new Intent(this, WifiChooser.class);
    		wifi = (Button)findViewById(R.id.wifi);
    		wifi.setOnClickListener(new OnClickListener() {
+   			@Override
    			public void onClick(View v) {
-   			setContentView(R.layout.wifi_chooser);
+   				startActivity(wifiIntent);
    			}
    		});
+   		final Intent backIntent = new Intent(this, BackChooser.class);
    		back = (Button)findViewById(R.id.back);
    		back.setOnClickListener(new OnClickListener() {
+   			@Override
    			public void onClick(View v) {
-   			setContentView(R.layout.back_chooser);
+   				startActivity(backIntent);
    			}
    		});
-   		home= (Button)findViewById(R.id.home);
+   		final Intent homeIntent = new Intent(this, HomeChooser.class);
+   		home = (Button)findViewById(R.id.home);
    		home.setOnClickListener(new OnClickListener() {
+   			@Override
    			public void onClick(View v) {
-   			setContentView(R.layout.home_chooser);
+   				startActivity(homeIntent);
    			}
    		});
+   		final Intent menuIntent = new Intent(this, MenuChooser.class);
    		menu = (Button)findViewById(R.id.menu);
    		menu.setOnClickListener(new OnClickListener() {
+   			@Override
    			public void onClick(View v) {
-   			setContentView(R.layout.menu_chooser);
+   				startActivity(menuIntent);
    			}
    		});
+   		final Intent recentIntent = new Intent(this, RecentChooser.class);
    		recent = (Button)findViewById(R.id.recent);
    		recent.setOnClickListener(new OnClickListener() {
+   			@Override
    			public void onClick(View v) {
-   			setContentView(R.layout.recent_chooser);
+   				startActivity(recentIntent);
    			}
    		});
+   		final Intent searchIntent = new Intent(this, SearchChooser.class);
    		search = (Button)findViewById(R.id.search);
    		search.setOnClickListener(new OnClickListener() {
+   			@Override
    			public void onClick(View v) {
-   			setContentView(R.layout.search_chooser);
+   				startActivity(searchIntent);
    			}
    		});
    	}
-	public void resume() {
-    }
-
-    public void pause() {
+	@Override
+	protected void onPause() {
+		super.onPause();
+	}
+	@Override
+	protected void onResume() {
+		super.onResume();
+	}
+	@Override
+    protected void onDestroy() {
+    	super.onDestroy();
     }
 }

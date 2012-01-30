@@ -1,50 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="entries_data_icon_chooser_window">
+    <!-- Status Bar Items -->
+    <string-array name="entries_battery">
+        <item>Circle</item>
+        <item>Circle Glow</item>
+        <item>Digital</item>
+        <item>Gauge</item>
+        <item>Stock</item>
+        <item>Stock Numbered</item>
+        <item>Xoom (Default)</item>
+    </string-array>
+    <string-array name="values_battery" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="entries_data_icon">
         <item>Bottom Left (Default)</item>
         <item>Bottom Right</item>
+        <item>Center</item>
         <item>Top Left</item>
         <item>Top Right</item>
     </string-array>
-    <string-array name="values_data_icon_chooser_window" translatable="false">
+    <string-array name="values_data_icon" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="entries_signal">
+        <item>Block</item>
+        <item>Circle</item>
+        <item>Stock</item>
+        <item>Xoom (Default)</item>
+    </string-array>
+    <string-array name="values_signal" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
-    <string-array name="entries_battery_icon_chooser_window">
-        <item>Horizontal</item>
-        <item>Vertical</item>
+    <string-array name="entries_wifi">
+        <item>Circle</item>
+        <item>Round</item>
+        <item>Stock</item>
         <item>Xoom (Default)</item>
     </string-array>
-    <string-array name="values_battery_icon_chooser_window" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-    <string-array name="entries_signal_icon_chooser_window">
-        <item></item>
-        <item></item>
-        <item>Xoom (Default)</item>
-        <item>Xoom Mirror</item>
-    </string-array>
-    <string-array name="values_signal_icon_chooser_window" translatable="false">
+    <string-array name="values_wifi" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
-    <string-array name="entries_wifi_icon_chooser_window">
-        <item></item>
-        <item></item>
-        <item></item>
+    <!-- End Status Bar Items -->
+    <!-- Begin Navigation Bar Items -->
+    <string-array name="entries_back">
+        <item>Prime</item>
+        <item>Fat</item>
+        <item>Stock</item>
+        <item>Xoom (Default)</item>
+        <item>Plain</item>
+    </string-array>
+    <string-array name="values_back" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="entries_home">
+        <item>Prime</item>
+        <item>Fat</item>
+        <item>Stock</item>
+        <item>Xoom (Default)</item>
+        <item>Plain</item>
+    </string-array>
+    <string-array name="values_home" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="entries_menu">
+        <item>Prime</item>
+        <item>Fat</item>
+        <item>Stock</item>
         <item>Xoom (Default)</item>
     </string-array>
-    <string-array name="values_wifi_icon_chooser_window" translatable="false">
+    <string-array name="values_menu" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
-    
+    <string-array name="entries_recent">
+        <item>Prime</item>
+        <item>Fat</item>
+        <item>Stock</item>
+        <item>Xoom (Default)</item>
+        <item>Plain</item>
+    </string-array>
+    <string-array name="values_recent" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="entries_search">
+        <item>Stock</item>
+        <item>Xoom (Default)</item>
+    </string-array>
+    <string-array name="values_search" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <!-- End Navigation Bar Items -->
 </resources>
