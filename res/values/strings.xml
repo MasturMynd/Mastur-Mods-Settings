@@ -75,4 +75,17 @@
     <string name="email">Email me</string>
     <string name="donate">Donate</string>
     <!-- End Support -->
+    
+    <!-- Begin Downloadable Content -->
+    <string name="get_more">Download More Icons</string>
+    <string name="get_back">Get More Back Icons</string>
+    <string name="get_battery">Get More Battery Icon Sets</string>
+    <string name="get_data">Get More Data Icon Sets</string>
+    <string name="get_home">Get More Home Icons</string>
+    <string name="get_menu">Get More Menu Icons</string>
+    <string name="get_recent">Get More Recent Icons</string>
+    <string name="get_search">Get More Search Icons</string>
+    <string name="get_signal">Get More Signal Icon Sets</string>
+    <string name="get_wifi">Get More Wi-Fi Icon Sets</string>
+    <!-- End Downloadable Content -->
 </resources>

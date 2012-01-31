@@ -1,11 +1,14 @@
 package com.masturmods.settings;
 
+import java.io.File;
+
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -33,6 +36,46 @@ public class MasturModsSettingsActivity extends Activity {
    	public void onCreate(Bundle savedInstanceState) {
    		super.onCreate(savedInstanceState);
    		setContentView(R.layout.main);
+   		File masturMods = new File(Environment.getExternalStorageDirectory(), "/MasturMods/");
+   		if(!masturMods.exists()) {
+   		    masturMods.mkdirs();
+   		}
+   		File batteryDir = new File(Environment.getExternalStorageDirectory(), "/MasturMods/Batteries");
+   		if(!batteryDir.exists()) {
+   		    batteryDir.mkdirs();
+   		}
+   		File dataDir = new File(Environment.getExternalStorageDirectory(), "/MasturMods/DataIcons");
+   		if(!dataDir.exists()) {
+   		    dataDir.mkdirs();
+   		}
+   		File signalDir = new File(Environment.getExternalStorageDirectory(), "/MasturMods/SignalIcons");
+   		if(!signalDir.exists()) {
+   		    signalDir.mkdirs();
+   		}
+   		File wifiDir = new File(Environment.getExternalStorageDirectory(), "/MasturMods/WiFiIcons");
+   		if(!wifiDir.exists()) {
+   		    wifiDir.mkdirs();
+   		}
+   		File backDir = new File(Environment.getExternalStorageDirectory(), "/MasturMods/BackButtons");
+   		if(!backDir.exists()) {
+   		    backDir.mkdirs();
+   		}
+   		File homeDir = new File(Environment.getExternalStorageDirectory(), "/MasturMods/HomeButtons");
+   		if(!homeDir.exists()) {
+   		    homeDir.mkdirs();
+   		}
+   		File menuDir = new File(Environment.getExternalStorageDirectory(), "/MasturMods/MenuButtons");
+   		if(!menuDir.exists()) {
+   		    menuDir.mkdirs();
+   		}
+   		File recentDir = new File(Environment.getExternalStorageDirectory(), "/MasturMods/RecentButtons");
+   		if(!recentDir.exists()) {
+   		    recentDir.mkdirs();
+   		}
+   		File searchDir = new File(Environment.getExternalStorageDirectory(), "/MasturMods/SearchButtons");
+   		if(!searchDir.exists()) {
+   		    searchDir.mkdirs();
+   		}
    		button_donate = (Button)findViewById(R.id.button_donate);
    		button_donate.setOnClickListener(new OnClickListener() {         
    			@Override
