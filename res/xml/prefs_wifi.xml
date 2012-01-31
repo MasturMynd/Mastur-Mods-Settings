@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory 
+        android:key="wifi"
+        android:title="@string/wifi_title" >
+        <ListPreference
+            android:key="wifi"
+            android:title="@string/wifi_title"
+            android:entries="@array/entries_wifi"
+            android:entryValues="@array/values_wifi" />
+    </PreferenceCategory>
+</PreferenceScreen>

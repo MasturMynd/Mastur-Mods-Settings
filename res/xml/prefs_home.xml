@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory 
+        android:key="home"
+        android:title="@string/home_title" >
+        <ListPreference
+            android:key="home"
+            android:title="@string/home_title"
+            android:entries="@array/entries_home"
+            android:entryValues="@array/values_home" />
+    </PreferenceCategory>
+</PreferenceScreen>

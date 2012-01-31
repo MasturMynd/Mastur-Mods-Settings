@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/scrollviewbattery" >
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/linearlayoutbattery" >
+	    <RadioGroup android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/radiogroup_battery">
+	        <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/circle" android:text="@string/circle" android:id="@+id/battery_circle" />
+	        <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/hooolm" android:text="@string/hooolm" android:id="@+id/battery_hooolm" />
+	        <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/digital" android:text="@string/digital" android:id="@+id/battery_digital" />
+	        <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/gauge" android:text="@string/gauge" android:id="@+id/battery_gauge" />
+	        <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/original_battery" android:text="@string/original" android:id="@+id/battery_original" />
+	        <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/numbers" android:text="@string/numbers" android:id="@+id/battery_numbers" />
+	        <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:drawableLeft="@drawable/xoom" android:text="@string/xoom" android:id="@+id/battery_xoom" />
+	    </RadioGroup>
+	    <TextView android:gravity="center_horizontal" android:paddingTop="15dip" android:paddingBottom="5dip" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#aa33b5e5" android:text="@string/ready" android:id="@+id/ready" />
+	    <Button android:layout_width="200dip" android:layout_height="wrap_content" android:padding="10dip" android:background="@drawable/button" android:text="@string/choose" android:id="@id/battery_choose"/>
+    	<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="100dip" >
+	    	<Button android:layout_width="200dip" android:layout_height="40dip" android:padding="10dip" android:background="@drawable/button" android:text="@string/get_battery" android:id="@+id/get_battery"/>
+		</LinearLayout>
+    </LinearLayout>
+</ScrollView>

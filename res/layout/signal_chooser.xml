@@ -1,0 +1,14 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/scrollviewsignal" >
+    	<LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/linearlayoutsignal" >
+		<RadioGroup android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/radiogroup_signal">		<RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/block_signal" android:text="@string/block" android:id="@+id/signal_block" />
+        <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/hooolm_signal" android:text="@string/hooolm" android:id="@+id/signal_hooolm" />
+		<RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/original_signal" android:text="@string/original" android:id="@+id/signal_stock" />
+        <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:drawableLeft="@drawable/xoom_signal" android:text="@string/xoom" android:id="@+id/signal_xoom" />
+		</RadioGroup>
+		<TextView android:gravity="center_horizontal" android:paddingTop="15dip" android:paddingBottom="5dip" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#aa33b5e5" android:text="@string/ready" android:id="@+id/ready" />
+	    <Button android:layout_width="200dip" android:layout_height="wrap_content" android:padding="10dip" android:background="@drawable/button" android:text="@string/choose" android:id="@id/signal_choose"/>
+    	<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="100dip" >
+	    	<Button android:layout_width="200dip" android:layout_height="40dip" android:padding="10dip" android:background="@drawable/button" android:text="@string/get_signal" android:id="@+id/get_signal"/>
+		</LinearLayout>
+    </LinearLayout>
+</ScrollView>

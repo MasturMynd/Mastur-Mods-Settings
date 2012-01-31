@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory 
+        android:key="signal"
+        android:title="@string/signal_title" >
+        <ListPreference
+            android:key="signal"
+            android:title="@string/signal_title"
+            android:entries="@array/entries_signal"
+            android:entryValues="@array/values_signal" />
+    </PreferenceCategory>
+</PreferenceScreen>

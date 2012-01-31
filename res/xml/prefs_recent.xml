@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory 
+        android:key="recent"
+        android:title="@string/recent_title" >
+        <ListPreference
+            android:key="recent"
+            android:title="@string/recent_title"
+            android:entries="@array/entries_recent"
+            android:entryValues="@array/values_recent" />
+    </PreferenceCategory>
+</PreferenceScreen>

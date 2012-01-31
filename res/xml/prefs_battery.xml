@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory 
+        android:key="battery"
+        android:title="@string/battery_title" >
+        <ListPreference
+            android:key="battery"
+            android:title="@string/battery_title"
+            android:entries="@array/entries_battery"
+            android:entryValues="@array/values_battery" />
+    </PreferenceCategory>
+</PreferenceScreen>
