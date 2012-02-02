@@ -1,60 +1,155 @@
 package com.masturmods.settings.activities;
 
-import android.content.ActivityNotFoundException;
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Environment;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.Toast;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
 
+import com.masturmods.settings.activities.BatteryChooser;
 import com.masturmods.settings.MasturModsSettingsActivity;
 import com.masturmods.settings.R;
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
 public class BatteryChooser extends MasturModsSettingsActivity {
-	String url = "http://masturmods.us.to/downloads/masturmods-settings/status-bar/battery/";
-    Intent i = new Intent(Intent.ACTION_VIEW);
-    Uri u = Uri.parse(url);
-    Context context = this;
- 	private RadioGroup batteryGroup;
- 	private RadioButton batteryButton;
- 	private Button choose;
- 	private Button getBattery;
+
+ 	private static List<BatteryIcon> mBatteryIcons;
  	
  	@Override
 	public void onCreate(Bundle savedInstanceState) {
  		super.onCreate(savedInstanceState);
  		setContentView(R.layout.battery_chooser);
- 		addListenerOnButton();
- 	}
- 	
-	public void addListenerOnButton() {
-		batteryGroup = (RadioGroup) findViewById(R.id.radiogroup_battery);
-   		choose = (Button) findViewById(R.id.battery_choose);
-   		
-   		choose.setOnClickListener(new OnClickListener() {
-   			
-   			public void onClick(View v) {
-   				int selectedId = batteryGroup.getCheckedRadioButtonId();
-   				batteryButton = (RadioButton) findViewById(selectedId);
-   				Toast.makeText(BatteryChooser.this, batteryButton.getText(), Toast.LENGTH_SHORT).show();
-   			}
-   		});
-   		getBattery = (Button)findViewById(R.id.get_battery);
-   		getBattery.setOnClickListener(new OnClickListener() {         
-   			@Override
-   			public void onClick(View v){
-   				try {
-   					i.setData(u);
-   					startActivity(i);
-   				} catch (ActivityNotFoundException e) {
-   					Toast.makeText(context, "Browser not found.", Toast.LENGTH_SHORT);
-   				}
-   			} 
-   		});
-   	}
+
+		final ListView listView = (ListView)findViewById(R.id.batteryView);
+		final ListAdapter adapter = new ListAdapter(getApplicationContext());
+		
+		final String sdcard = Environment.getExternalStorageDirectory().getAbsolutePath();
+		final File batteryFolder = new File(sdcard + "/MasturMods/Batteries");
+		mBatteryIcons = getBatteryIcons(batteryFolder);
+		
+		adapter.setListItems(mBatteryIcons);
+		listView.setAdapter(adapter);
+		
+		if (mBatteryIcons.isEmpty()) {
+			findViewById(R.id.emptyView).setVisibility(View.VISIBLE);
+		}
+	}
+	
+	private List<BatteryIcon> getBatteryIcons(final File path) {
+		final File[] batteryFolder = path.listFiles();
+		List<BatteryIcon> batteryIcons = new ArrayList<BatteryIcon>();
+		
+		if (batteryFolder != null) {
+			
+			for (final File file : batteryFolder) {
+				
+				if (file.getAbsolutePath().toLowerCase().endsWith(".zip")) {
+					Drawable icon = null;
+					
+					try {
+						final Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+						icon = new BitmapDrawable(bitmap);                      
+					} catch (Exception e) {
+					}
+					
+					if (icon != null) {
+						BatteryIcon batteryIcon = new BatteryIcon();
+						batteryIcon.setIcon(icon);
+						batteryIcon.setName(file.getName());
+						batteryIcons.add(batteryIcon);
+					}
+				}
+			}
+		}
+		return batteryIcons;
+	}
+
+	private class BatteryIcon {
+		private String name;
+		private Drawable icon;
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		public void setIcon(Drawable icon) {
+			this.icon = icon;
+		}
+
+		public Drawable getIcon() {
+			return icon;
+		}
+	}
+
+	public class ListAdapter extends BaseAdapter {
+		private LayoutInflater mInflater;
+		private List<BatteryIcon> batteryIcons;
+
+		public ListAdapter(Context context) {
+			mInflater = LayoutInflater.from(context);
+		}
+
+		@Override
+		public int getCount() {
+			return batteryIcons.size();
+		}
+
+		@Override
+		public Object getItem(int position) {
+			return batteryIcons.get(position);
+		}
+
+		@Override
+		public long getItemId(int position) {
+			return position;
+		}
+
+		@Override
+		public View getView(final int position, View convertView, ViewGroup parent) {
+			final ViewHolder holder;
+
+			if (convertView == null) {
+				convertView = mInflater.inflate(R.layout.row, null);
+				holder = new ViewHolder();
+				holder.mTitle = (TextView) convertView.findViewById(R.id.text);
+				holder.mImage = (ImageView) convertView.findViewById(R.id.img);
+				convertView.setTag(holder);
+				
+			} else {
+				holder = (ViewHolder) convertView.getTag();
+			}
+
+			final BatteryIcon batteryIcon = batteryIcons.get(position);
+			holder.mTitle.setText(batteryIcon.getName());
+			holder.mImage.setImageDrawable(batteryIcon.getIcon());
+
+			return convertView; 
+		}
+
+		public void setListItems(List<BatteryIcon> list) { 
+			batteryIcons = list; 
+		}
+
+		public class ViewHolder {
+			private TextView mTitle;
+			private ImageView mImage;
+
+		}
+	}
 }

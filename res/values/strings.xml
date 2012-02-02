@@ -27,28 +27,7 @@
     <string name="recent_title">Recent Soft Key</string>
     <string name="search_title">Search Soft Key</string>
     <!-- End Preferences -->
-    
-    <!-- Begin Button Titles -->
-    <string name="bl">Bottom Left</string>
-    <string name="block">Blocks</string>
-    <string name="br">Bottom Right</string>
-    <string name="circle">Circle</string>
-    <string name="digital">Digital</string>
-    <string name="fat">Prime Fat</string>
-    <string name="gauge">Gauge</string>
-    <string name="hooolm">Circle Glow</string>
-    <string name="numbers">Stock Numbered</string>
-    <string name="original">Stock</string>
-    <string name="plain">Xoom Plain</string>
-    <string name="prime">Prime</string>
-    <string name="round">Round</string>
-    <string name="tl">Top Left</string>
-    <string name="tr">Top Right</string>
-    <string name="xoom">Xoom</string>
-    <string name="choose">Let\'s Do This!</string>
-    <string name="ready">Ready?</string>
-	<!-- End Button Titles -->
-    
+      
     <!-- Begin Status Bar -->
     <string name="status_bar">Status Bar</string>
     <string name="stat_bar_title">Status Bar Tweaks</string>
@@ -77,15 +56,6 @@
     <!-- End Support -->
     
     <!-- Begin Downloadable Content -->
-    <string name="get_more">Download More Icons</string>
-    <string name="get_back">Get More Back Icons</string>
-    <string name="get_battery">Get More Battery Icon Sets</string>
-    <string name="get_data">Get More Data Icon Sets</string>
-    <string name="get_home">Get More Home Icons</string>
-    <string name="get_menu">Get More Menu Icons</string>
-    <string name="get_recent">Get More Recent Icons</string>
-    <string name="get_search">Get More Search Icons</string>
-    <string name="get_signal">Get More Signal Icon Sets</string>
-    <string name="get_wifi">Get More Wi-Fi Icon Sets</string>
+    <string name="more">Download More Icons</string>
     <!-- End Downloadable Content -->
 </resources>

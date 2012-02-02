@@ -42,109 +42,51 @@ public final class R {
         public static final int background_normal=0x7f020003;
         public static final int background_pressed=0x7f020004;
         public static final int battery=0x7f020005;
-        public static final int bl=0x7f020006;
-        public static final int block_signal=0x7f020007;
-        public static final int br=0x7f020008;
-        public static final int button=0x7f020009;
-        public static final int button_focused=0x7f02000a;
-        public static final int button_normal=0x7f02000b;
-        public static final int button_pressed=0x7f02000c;
-        public static final int circle=0x7f02000d;
-        public static final int data=0x7f02000e;
-        public static final int digital=0x7f02000f;
-        public static final int fat_back=0x7f020010;
-        public static final int fat_home=0x7f020011;
-        public static final int fat_recent=0x7f020012;
-        public static final int gauge=0x7f020013;
-        public static final int home=0x7f020014;
-        public static final int hooolm=0x7f020015;
-        public static final int hooolm_signal=0x7f020016;
-        public static final int hooolm_wifi=0x7f020017;
-        public static final int hooolmdata=0x7f020018;
-        public static final int ic_launcher=0x7f020019;
-        public static final int menu=0x7f02001a;
-        public static final int numbers=0x7f02001b;
-        public static final int original_battery=0x7f02001c;
-        public static final int original_menu=0x7f02001d;
-        public static final int original_signal=0x7f02001e;
-        public static final int original_wifi=0x7f02001f;
-        public static final int plain_back=0x7f020020;
-        public static final int plain_home=0x7f020021;
-        public static final int plain_recent=0x7f020022;
-        public static final int prime_back=0x7f020023;
-        public static final int prime_home=0x7f020024;
-        public static final int prime_menu=0x7f020025;
-        public static final int prime_recent=0x7f020026;
-        public static final int recent=0x7f020027;
-        public static final int round_wifi=0x7f020028;
-        public static final int search=0x7f020029;
-        public static final int signal=0x7f02002a;
-        public static final int tl=0x7f02002b;
-        public static final int tr=0x7f02002c;
-        public static final int wifi=0x7f02002d;
-        public static final int xoom=0x7f02002e;
-        public static final int xoom_back=0x7f02002f;
-        public static final int xoom_home=0x7f020030;
-        public static final int xoom_menu=0x7f020031;
-        public static final int xoom_recent=0x7f020032;
-        public static final int xoom_search=0x7f020033;
-        public static final int xoom_signal=0x7f020034;
-        public static final int xoom_wifi=0x7f020035;
+        public static final int button=0x7f020006;
+        public static final int button_focused=0x7f020007;
+        public static final int button_normal=0x7f020008;
+        public static final int button_pressed=0x7f020009;
+        public static final int data=0x7f02000a;
+        public static final int home=0x7f02000b;
+        public static final int ic_backchooser=0x7f02000c;
+        public static final int ic_batterychooser=0x7f02000d;
+        public static final int ic_datachooser=0x7f02000e;
+        public static final int ic_homechooser=0x7f02000f;
+        public static final int ic_launcher=0x7f020010;
+        public static final int ic_menuchooser=0x7f020011;
+        public static final int ic_recentchooser=0x7f020012;
+        public static final int ic_searchchooser=0x7f020013;
+        public static final int ic_signalchooser=0x7f020014;
+        public static final int ic_wifichooser=0x7f020015;
+        public static final int menu=0x7f020016;
+        public static final int recent=0x7f020017;
+        public static final int search=0x7f020018;
+        public static final int signal=0x7f020019;
+        public static final int wifi=0x7f02001a;
     }
     public static final class id {
         public static final int back=0x7f06001a;
+        public static final int backView=0x7f060022;
         public static final int back_choose=0x7f060001;
-        public static final int back_fat=0x7f060025;
-        public static final int back_plain=0x7f060028;
-        public static final int back_prime=0x7f060024;
-        public static final int back_stock=0x7f060026;
-        public static final int back_xoom=0x7f060027;
         public static final int battery=0x7f060014;
+        public static final int batteryView=0x7f060024;
         public static final int battery_choose=0x7f060002;
         public static final int battery_chooser=0x7f060015;
-        public static final int battery_circle=0x7f06002c;
-        public static final int battery_digital=0x7f06002e;
-        public static final int battery_gauge=0x7f06002f;
-        public static final int battery_hooolm=0x7f06002d;
-        public static final int battery_numbers=0x7f060031;
-        public static final int battery_original=0x7f060030;
-        public static final int battery_xoom=0x7f060032;
         public static final int button_donate=0x7f060021;
         public static final int button_email=0x7f060020;
+        public static final int button_more=0x7f060027;
         public static final int data=0x7f060016;
-        public static final int data_bl=0x7f060036;
-        public static final int data_br=0x7f060037;
+        public static final int dataView=0x7f060025;
         public static final int data_choose=0x7f060003;
-        public static final int data_hooolm=0x7f060038;
-        public static final int data_tl=0x7f060039;
-        public static final int data_tr=0x7f06003a;
-        public static final int get_back=0x7f06002a;
-        public static final int get_battery=0x7f060033;
-        public static final int get_data=0x7f06003b;
-        public static final int get_home=0x7f060042;
-        public static final int get_menu=0x7f060048;
-        public static final int get_recent=0x7f06004f;
-        public static final int get_search=0x7f060053;
-        public static final int get_signal=0x7f06005a;
-        public static final int get_wifi=0x7f060061;
+        public static final int emptyView=0x7f060023;
         public static final int home=0x7f06001b;
+        public static final int homeView=0x7f060026;
         public static final int home_choose=0x7f060004;
-        public static final int home_fat=0x7f06003e;
-        public static final int home_plain=0x7f060041;
-        public static final int home_prime=0x7f06003d;
-        public static final int home_stock=0x7f06003f;
-        public static final int home_xoom=0x7f060040;
-        public static final int linearlayoutbattery=0x7f060023;
-        public static final int linearlayoutdata=0x7f060035;
-        public static final int linearlayoutsignal=0x7f060055;
-        public static final int linearlayoutwifi=0x7f06005c;
+        public static final int img=0x7f06002a;
         public static final int main_scroll=0x7f060000;
         public static final int menu=0x7f06001c;
+        public static final int menuView=0x7f060028;
         public static final int menu_choose=0x7f060005;
-        public static final int menu_fat=0x7f060045;
-        public static final int menu_prime=0x7f060044;
-        public static final int menu_stock=0x7f060046;
-        public static final int menu_xoom=0x7f060047;
         public static final int nav_bar=0x7f060019;
         public static final int radiogroup_back=0x7f06000a;
         public static final int radiogroup_battery=0x7f06000b;
@@ -155,41 +97,21 @@ public final class R {
         public static final int radiogroup_search=0x7f060010;
         public static final int radiogroup_signal=0x7f060011;
         public static final int radiogroup_wifi=0x7f060012;
-        public static final int ready=0x7f060029;
         public static final int recent=0x7f06001d;
+        public static final int recentView=0x7f060029;
         public static final int recent_choose=0x7f060006;
-        public static final int recent_fat=0x7f06004b;
-        public static final int recent_plain=0x7f06004e;
-        public static final int recent_prime=0x7f06004a;
-        public static final int recent_stock=0x7f06004c;
-        public static final int recent_xoom=0x7f06004d;
-        public static final int scrollviewback=0x7f060022;
-        public static final int scrollviewbattery=0x7f06002b;
-        public static final int scrollviewdata=0x7f060034;
-        public static final int scrollviewhome=0x7f06003c;
-        public static final int scrollviewmenu=0x7f060043;
-        public static final int scrollviewrecent=0x7f060049;
-        public static final int scrollviewsearch=0x7f060050;
-        public static final int scrollviewsignal=0x7f060054;
-        public static final int scrollviewwifi=0x7f06005b;
         public static final int search=0x7f06001e;
+        public static final int searchView=0x7f06002c;
         public static final int search_choose=0x7f060007;
-        public static final int search_stock=0x7f060051;
-        public static final int search_xoom=0x7f060052;
         public static final int signal=0x7f060017;
-        public static final int signal_block=0x7f060056;
+        public static final int signalView=0x7f06002d;
         public static final int signal_choose=0x7f060008;
-        public static final int signal_hooolm=0x7f060057;
-        public static final int signal_stock=0x7f060058;
-        public static final int signal_xoom=0x7f060059;
         public static final int status_bar=0x7f060013;
         public static final int support=0x7f06001f;
+        public static final int text=0x7f06002b;
         public static final int wifi=0x7f060018;
+        public static final int wifiView=0x7f06002e;
         public static final int wifi_choose=0x7f060009;
-        public static final int wifi_hooolm=0x7f06005d;
-        public static final int wifi_round=0x7f06005e;
-        public static final int wifi_stock=0x7f06005f;
-        public static final int wifi_xoom=0x7f060060;
     }
     public static final class layout {
         public static final int back_chooser=0x7f030000;
@@ -199,99 +121,70 @@ public final class R {
         public static final int main=0x7f030004;
         public static final int menu_chooser=0x7f030005;
         public static final int recent_chooser=0x7f030006;
-        public static final int search_chooser=0x7f030007;
-        public static final int signal_chooser=0x7f030008;
-        public static final int wifi_chooser=0x7f030009;
+        public static final int row=0x7f030007;
+        public static final int search_chooser=0x7f030008;
+        public static final int signal_chooser=0x7f030009;
+        public static final int wifi_chooser=0x7f03000a;
     }
     public static final class string {
         /**  Begin Activities Titles 
          */
         public static final int app_name=0x7f070000;
-        public static final int back_button=0x7f070032;
+        public static final int back_button=0x7f070020;
         public static final int back_mods=0x7f070003;
         public static final int back_title=0x7f070012;
-        public static final int battery=0x7f07002c;
-        public static final int battery_chooser=0x7f07002b;
+        public static final int battery=0x7f07001a;
+        public static final int battery_chooser=0x7f070019;
         public static final int battery_mods=0x7f070004;
         public static final int battery_title=0x7f07000e;
-        /**  End Preferences 
- Begin Button Titles 
-         */
-        public static final int bl=0x7f070017;
-        public static final int block=0x7f070018;
-        public static final int br=0x7f070019;
-        public static final int choose=0x7f070027;
-        public static final int circle=0x7f07001a;
-        public static final int data_icon=0x7f07002d;
+        public static final int data_icon=0x7f07001b;
         public static final int data_mods=0x7f070005;
         public static final int data_title=0x7f07000f;
-        public static final int digital=0x7f07001b;
-        public static final int donate=0x7f07003a;
-        public static final int email=0x7f070039;
-        public static final int fat=0x7f07001c;
-        public static final int gauge=0x7f07001d;
-        public static final int get_back=0x7f07003c;
-        public static final int get_battery=0x7f07003d;
-        public static final int get_data=0x7f07003e;
-        public static final int get_home=0x7f07003f;
-        public static final int get_menu=0x7f070040;
+        public static final int donate=0x7f070028;
+        public static final int email=0x7f070027;
+        public static final int home_button=0x7f070021;
+        public static final int home_mods=0x7f070006;
+        public static final int home_title=0x7f070013;
+        public static final int menu_button=0x7f070022;
+        public static final int menu_mods=0x7f070007;
+        public static final int menu_title=0x7f070014;
         /**  End Support 
  Begin Downloadable Content 
          */
-        public static final int get_more=0x7f07003b;
-        public static final int get_recent=0x7f070041;
-        public static final int get_search=0x7f070042;
-        public static final int get_signal=0x7f070043;
-        public static final int get_wifi=0x7f070044;
-        public static final int home_button=0x7f070033;
-        public static final int home_mods=0x7f070006;
-        public static final int home_title=0x7f070013;
-        public static final int hooolm=0x7f07001e;
-        public static final int menu_button=0x7f070034;
-        public static final int menu_mods=0x7f070007;
-        public static final int menu_title=0x7f070014;
+        public static final int more=0x7f070029;
         /**  Begin Preferences 
          */
         public static final int nav_bar=0x7f07000c;
-        public static final int nav_bar_title=0x7f070031;
+        public static final int nav_bar_title=0x7f07001f;
         /**  End Status Bar 
  Begin Navigation Bar 
          */
-        public static final int navigation_bar=0x7f070030;
-        public static final int numbers=0x7f07001f;
-        public static final int original=0x7f070020;
-        public static final int plain=0x7f070021;
-        public static final int prime=0x7f070022;
-        public static final int ready=0x7f070028;
-        public static final int recent_button=0x7f070035;
+        public static final int navigation_bar=0x7f07001e;
+        public static final int recent_button=0x7f070023;
         public static final int recent_mods=0x7f070008;
         public static final int recent_title=0x7f070015;
-        public static final int round=0x7f070023;
-        public static final int search_button=0x7f070036;
+        public static final int search_button=0x7f070024;
         public static final int search_mods=0x7f070009;
         public static final int search_title=0x7f070016;
-        public static final int signal_icon=0x7f07002e;
+        public static final int signal_icon=0x7f07001c;
         public static final int signal_mods=0x7f07000a;
         public static final int signal_title=0x7f070010;
         public static final int stat_bar=0x7f07000d;
-        public static final int stat_bar_title=0x7f07002a;
-        /**  End Button Titles 
+        public static final int stat_bar_title=0x7f070018;
+        /**  End Preferences 
  Begin Status Bar 
          */
-        public static final int status_bar=0x7f070029;
+        public static final int status_bar=0x7f070017;
         /**  End Navigation Bar 
  Begin Support 
          */
-        public static final int support=0x7f070037;
-        public static final int support_title=0x7f070038;
+        public static final int support=0x7f070025;
+        public static final int support_title=0x7f070026;
         public static final int title_nav_bar=0x7f070002;
         public static final int title_stat_bar=0x7f070001;
-        public static final int tl=0x7f070024;
-        public static final int tr=0x7f070025;
-        public static final int wifi_icon=0x7f07002f;
+        public static final int wifi_icon=0x7f07001d;
         public static final int wifi_mods=0x7f07000b;
         public static final int wifi_title=0x7f070011;
-        public static final int xoom=0x7f070026;
     }
     public static final class xml {
         public static final int prefs=0x7f040000;

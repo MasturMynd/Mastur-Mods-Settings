@@ -18,7 +18,9 @@ import com.masturmods.settings.activities.*;
 
 public class MasturModsSettingsActivity extends Activity {
 	String url = "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=7NN6B7L7YXQ82&lc=US&item_name=Mastur%20Mods&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted";
-    Intent i = new Intent(Intent.ACTION_VIEW);
+    String mM = "http://www.masturmods.us.to/downloads/masturmods-settings/";
+	Intent i = new Intent(Intent.ACTION_VIEW);
+	Uri m = Uri.parse(mM);
     Uri u = Uri.parse(url);
     Context context = this;
     private Button button_email;
@@ -30,6 +32,7 @@ public class MasturModsSettingsActivity extends Activity {
 	private Button back;
 	private Button home;
 	private Button menu;
+	private Button button_more;
 	private Button recent;
 	private Button search;
 	@Override
@@ -171,6 +174,18 @@ public class MasturModsSettingsActivity extends Activity {
    			public void onClick(View v) {
    				startActivity(searchIntent);
    			}
+   		});
+   		button_more = (Button)findViewById(R.id.button_more);
+   		button_more.setOnClickListener(new OnClickListener() {         
+   			@Override
+   			public void onClick(View v){
+   				try {
+   					i.setData(m);
+   					startActivity(i);
+   				} catch (ActivityNotFoundException e) {
+   					Toast.makeText(context, "Browser not found.", Toast.LENGTH_SHORT);
+   				}
+   			} 
    		});
    	}
 	@Override
